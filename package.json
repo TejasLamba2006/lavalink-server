@@ -1,0 +1,19 @@
+{
+  "name": "lavalink",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm i",
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "Tejas Lamba",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "chalk": "^4.0.0",
+    "cli-progress": "^3.12.0",
+    "discord.js": "^14.11.0"
+  }
+}
