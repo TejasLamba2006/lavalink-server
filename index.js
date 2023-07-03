@@ -34,10 +34,7 @@ async function startLavalink() {
     console.log(chalk.blue("Starting Lavalink..."));
     const lavalinkProcess = child_process.spawn("java", [
         "-jar",
-        "Lavalink-visa2code.jar",
-        "-Xmx512m",
-        "-Xms512m",
-        "-Djdk.tls.client.protocols=TLSv1.2",
+        "Lavalink-visa2code.jar"
     ]);
     lavalinkProcess.on("exit", (code) => {
         console.log(chalk.red(`Lavalink exited with code ${code}.`));
