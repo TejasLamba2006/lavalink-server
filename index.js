@@ -30,6 +30,10 @@ async function downloadLavalink() {
 async function startLavalink() {
   try {
     await downloadLavalink();
+    //check if file exists the delete it
+    if (fs.existsSync("Lavalink-visa2code.jar")) {
+      fs.unlinkSync("Lavalink-visa2code.jar");
+    }
     fs.renameSync("Lavalink.jar", "Lavalink-visa2code.jar");
     console.log(chalk.blue("Starting Lavalink..."));
     const lavalinkProcess = child_process.spawn("java", [
