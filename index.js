@@ -9,7 +9,7 @@ async function downloadLavalink() {
 
   const downloadProcess = child_process.spawn("curl", [
     "-L",
-    "https://cdn.darrennathanael.com/jars/cogs/Lavalink.jar",
+    "https://github.com/davidffa/lavalink/releases/download/v1.2.0/Lavalink.jar",
     "-o",
     "Lavalink.jar",
   ]);
