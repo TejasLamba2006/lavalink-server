@@ -1,18 +1,19 @@
 module.exports = {
     discord_bot: {
-        enabled: false,
-        token: process.env.TOKEN || "",
+        enabled: true,
+        token: process.env.TOKEN || "MTEwOTA2NTQ0MjMwNTI1MzM4Ng.GzzREV.uVeaExURyr9K93iQlTpPyXyqNLZKL6VoJ0GAlE",
+        prefix: process.env.PREFIX || "!",
         activity: {
             name: process.env.ACTIVITY_NAME || "Lavalinks",
             type: process.env.ACTIVITY_TYPE || "Watching",
         },
-        channelId: process.env.CHANNEL_ID || "",
+        channelId: process.env.CHANNEL_ID || "1111682190573588551",
         refreshInterval: process.env.REFRESH_INTERVAL || 30000,
     },
     lavalink: {
         enabled: false,
         nodes: [{
-            host: process.env.LAVALINK_HOST || "",
+            host: process.env.LAVALINK_HOST || "lavalink-server.bbbbbbbbb-aaaaaaaaa.repl.co",
             port: process.env.LAVALINK_PORT || 443,
             password: process.env.LAVALINK_PASSWORD || "visa2code",
             secure: process.env.LAVALINK_SECURE || true
