@@ -4,7 +4,7 @@ server: # REST and WS server
 
 lavalink:
   server:
-    password: "youshallnotpass"
+    password: "visa2code"
     playerUpdateInterval: 5 # How frequently to send player updates to clients, in seconds
     statsTaskInterval: 60 # How frequently to send the node stats to clients, in seconds
     koe:
