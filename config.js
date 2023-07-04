@@ -1,6 +1,6 @@
 module.exports = {
     discord_bot: {
-        enabled: true,
+        enabled: false,
         token: process.env.TOKEN || "",
         activity: {
             name: process.env.ACTIVITY_NAME || "Lavalinks",
