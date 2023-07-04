@@ -146,7 +146,7 @@ if (config.discord_bot.enabled) {
     });
     console.log(chalk.green(`[CLIENT] ${client.user.tag} is ready.`));
     client.manager.init(client.user.id);
-    const channel = await client.channels.fetch(config.discord_bot.channelId);
+    const channel = await client.channels.fetch(config.discord_bot.channelId).catch(() => {});
     if (!channel) {
       console.log(
         chalk.red(
